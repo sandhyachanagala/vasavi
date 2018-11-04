@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:context=".AddQuestion"
+    android:showIn="@layout/activity_add_question">
+ >
+
+<EditText
+android:id="@+id/company"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="15dp"
+android:ems="10"
+android:hint="Company"
+android:inputType="textPersonName"
+app:layout_constraintBottom_toTopOf="@+id/que"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.494"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.725" />
+
+<EditText
+android:id="@+id/que"
+android:layout_width="300dp"
+android:layout_height="70dp"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="217dp"
+android:ems="10"
+android:hint="Question"
+android:inputType="textPersonName"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.494"
+app:layout_constraintStart_toStartOf="parent"
+android:layout_editor_absoluteY="185dp" />
+
+<EditText
+android:id="@+id/ans"
+android:layout_width="300dp"
+android:layout_height="100dp"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:layout_marginBottom="204dp"
+android:ems="10"
+android:hint="Answer"
+android:inputType="textPersonName"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.494"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/que" />
+
+<Button
+android:id="@+id/submitque"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:text="Submit"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+<EditText
+android:id="@+id/round"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="81dp"
+android:ems="10"
+android:hint="Round"
+android:inputType="textPersonName" />
+
+<EditText
+android:id="@+id/topic"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="151dp"
+android:ems="10"
+android:hint="Topic"
+android:inputType="textPersonName" />
+
+<RatingBar
+android:id="@+id/rating"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:layout_marginBottom="63dp" />
+
+<CheckBox
+android:id="@+id/selected"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:layout_marginBottom="150dp"
+android:text="Selected?" />
+
+    </LinerLayout>
